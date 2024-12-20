@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Liste des Tâches</h1>
+    <ul class="list-group">
+        <li *ngFor="let task of tasks" class="list-group-item">
+            <span>{{ task.title }}</span>
+            <a [routerLink]="'/task/' + task.id" class="btn btn-primary">View</a>        </li>
+    </ul>
+</div>
